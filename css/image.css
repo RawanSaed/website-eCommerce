@@ -1,0 +1,217 @@
+
+.center-text h2{
+  color: #111;
+  font-size: 28px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 30px;
+ }
+
+.center-text span{
+ color: #EE1C47;
+}
+
+.products{
+  display: flex;
+
+}
+.row{
+  position: relative;
+  transition: all .40s;
+}
+.row img{
+  width: 300px;
+  height: auto;
+  transition: all .40s;
+  margin-right: 30px; 
+}
+.row img:hover{
+   transform: scale(0.9);
+}
+.product-text h5{
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #276737;
+  padding: 3px 10px;
+  border-radius: 2px;
+}
+.color-picker {
+    display: flex;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+	border: 2px solid #333;
+}
+.color-option:hover{
+    border: 4px solid #333;
+}
+.color-option1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+border: 2px solid #333;
+}
+.color-option1:hover{
+  border: 4px solid #333;
+}
+.color-option2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+border: 2px solid #333;
+}
+.color-option2:hover{
+  border: 4px solid #333;
+}
+.color-option3 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+border: 2px solid #333;
+}
+.color-option3:hover{
+  border: 4px solid #333;
+}
+.color-option4 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+border: 2px solid #333;
+}
+.color-option4:hover{
+  border: 4px solid #333;
+}
+.color-option5 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+border: 2px solid #333;
+}
+.color-option5:hover{
+  border: 4px solid #333;
+}
+.color-option6 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+border: 2px solid #333;
+}
+.color-option6:hover{
+  border: 4px solid #333;
+}
+.color-option7 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+border: 2px solid #333;
+}
+.color-option7:hover{
+  border: 4px solid #333;
+}
+.color-option8 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+border: 2px solid #333;
+}
+.color-option8:hover{
+  border: 4px solid #333;
+}
+.color-option9 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+border: 2px solid #333;
+}
+.color-option9:hover{
+  border: 4px solid #333;
+}
+.rating i{
+	color:#FF8C00;
+	font-size:18px;
+}
+
+.size-select {
+    display: flex;
+}
+
+.size-option {
+    padding: 5px 10px;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+.products .row .price{
+	font-size:22px;
+}
+
+.addCart{
+	background-color:#FF8C00;
+	transition:0.5s all;
+	color:#eee;
+	padding:10px 50px;
+	text-align:center;
+	border-radius:30px;
+	margin-top:5px;
+	margin-bottom:15px;
+	margin-left:60px;
+	border:none;
+	cursor:pointer;
+}
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-icon img {
+    width: 30px;
+}
+
+#cart-total {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.product {
+    margin-bottom: 20px;
+}
+
+.sale-price {
+	font-size:10 px;
+    color: green;
+}  
+.ul{
+  justify-content: left;
+}

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Woman Products</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/image.css"/>
+    <link rel="stylesheet" href="css/home.css"/>
+  <script type="text/javascript" src="js/woman.js"></script>
+   <script type="text/javascript" src="js/price.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  </head>
+  
+  <body>
+    <div class="nav1">
+      <nav class="nav1">
+        <div class="nav">
+            <img src="images\logo.png" class="brand-logo" alt="logo pic"/>         
+            <ul class="links-container">
+                <li ><a href="index.html" >Home</a></li>
+                <li ><a href="womanprod.html" >Women</a></li>
+                <li ><a href="menprod.html" >Men</a></li>
+                <li ><a href="kidsprod.html" >Kids</a></li>
+            </ul>
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="search product">
+                    <button class="search-btn">search</button>
+                <a href="SignUp.html"><img src="images\user.png" alt=""/></a>
+                <div class="cart-icon" onclick="toggleCart()">
+                  <img src="images/cart.png" alt="Cart Icon">
+                        <span id="cart-total">0</span>
+                </div>
+                 </div>
+            </div>
+        </nav>
+
+  <section class="trending-product" id="trending">
+    <div class="center-text">
+    <h2>Our Trending <span>Products</span></h2>
+    </div>
+					 
+  <div class="products">
+  <div class="row">
+    <div><img id="image1" src="images/pic1.jpg" alt=""/></div>
+    <button onclick="previous1()"><</button>
+    <button onclick="next1()">></button>
+  <div class="product-text">
+    <h5>New</h5>
+  </div>
+  
+  <div class="rating">
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+  </div>
+ 
+   <h3>Denim Skirt</h3>
+	 
+  <div class="color-picker" >
+     Color:
+     <div class="color-option" style="background-color: lightblue"></div>
+     <div class="color-option" style="background-color: black"></div>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+  </div>
+  
+   <div class="price">Price: $25</div>
+   <button class="addCart" onclick="addToCart('Denim Skirt', 25)">Add To Cart</button>
+  </div>
+
+  <div class="row">
+   <div><img id="image2" src="images/pic3.jpg" alt=""/></div>
+   <button onclick="previous2()"><</button>
+   <button onclick="next2()">></button>
+  <div class="product-text">
+    <h5>Sale</h5>
+  </div>
+  
+  <div class="rating">
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star-half'></i>
+  </div>
+	
+    <h3>Skirt with flowers</h3>
+	
+  <div class="color-picker" >
+     Color:
+     <div class="color-option" style="background-color: darkolivegreen"></div>
+     <div class="color-option" style="background-color: blue"></div>
+	 <div class="color-option" style="background-color: #FFCC00"></div>
+     <div class="color-option" style="background-color: #9966CC"></div>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+  </div>
+  
+     <div class="price">Price: $16 <span class="sale-price">Sale: $12.8</span></div>
+   <button class="addCart" onclick="addToCart('Skirt with flowers', 12.8)">Add To Cart</button>
+	</div>
+	
+	
+   <div class="row">
+   <div><img id="image3" src="images/pic8.jpg" alt=""/></div>
+   <button onclick="previous3()"><</button>
+   <button onclick="next3()">></button>
+   
+   <div class="rating">
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+   </div>
+   
+    <h3>High Waist Ruffle Hem Skirt</h3>
+   
+  <div class="color-picker" >
+     Color:
+     <div class="color-option" style="background-color: blue"></div>
+	 <div class="color-option" style="background-color: pink"></div>
+     <div class="color-option" style="background-color: darkolivegreen"></div>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+  </div>
+  
+ 
+   <div class="price">Price: $20</div>
+   <button class="addCart" onclick="addToCart('High Waist Ruffle Hem Skirt', 20)">Add To Cart</button>
+  </div>
+  
+  <div class="row">
+   <div><img id="image4" src="images/pic11.jpg" alt=""/></div>
+   <button onclick="previous4()"><</button>
+   <button onclick="next4()">></button>
+  <div class="product-text">
+    <h5>Sale</h5>
+  </div>
+  
+  <div class="rating">
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+  </div>
+	
+    <h3>Formal Pants</h3>
+	
+  <div class="color-picker" >
+     Color:
+     <div class="color-option" style="background-color: #9999CC"></div>
+     <div class="color-option" style="background-color: gray"></div>
+	 <div class="color-option" style="background-color: #CC0000"></div>
+     <div class="color-option" style="background-color: #003366"></div>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+  </div>
+  
+    
+   <div class="price">Price: $17 <span class="sale-price">Sale: $13.6</span></div>
+   <button class="addCart" onclick="addToCart('Formal Pants', 13.6)">Add To Cart</button>
+  </div>
+  </div>
+	
+  <div class="products">
+  <div class="row">
+   <div><img id="image5" src="images/pic15.jpg" alt=""/></div>
+  <div class="product-text">
+    <h5>Sale</h5>
+  </div>
+  
+  <div class="rating">
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+  </div>
+	
+    <h3>Pants</h3>
+	
+  <div class="color-picker" >
+     Color:
+     <div class="color-option" style="background-color:#339966"></div>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+  </div>
+  
+    <div class="price">Price: $21 <span class="sale-price">Sale: $16.8</span></div>
+   <button class="addCart" onclick="addToCart('Pants', 16.8)">Add To Cart</button>
+	</div>
+	
+	<div class="row">
+	<div><img id="image6" src="images/pic18.jpg" alt=""/></div>
+    <button onclick="previous6()"><</button>
+    <button onclick="next6()">></button>
+  <div class="product-text">
+    <h5>New</h5>
+  </div>
+  
+  <div class="rating">
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+  </div>
+ 
+   <h3>High Waist Raw Cut Jeans</h3>
+	 
+  <div class="color-picker" >
+     Color:
+     <div class="color-option" style="background-color: lightgray"></div>
+     <div class="color-option" style="background-color: #003366"></div>
+     <div class="color-option" style="background-color: gray"></div>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+    <label><input class="size-option" type="radio" name="size" value="Xlarge" />XL</label>
+  </div>
+
+  <div class="price">Price: $22</div>
+   <button class="addCart" onclick="addToCart('High Waist Raw Cut Jeans', 22)" >Add To Cart</button>
+  </div>
+	
+  <div class="row">
+  <div><img id="image7" src="images/pic21.jpg" alt=""/></div>
+	
+  <div class="rating">
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star-half'></i>
+  </div>
+ 
+   <h3>Two Tone Raw Cut Jeans</h3>
+	 
+  <div class="color-picker" >
+     Color:
+     <div class="color-option" style="background-color: lightgray"></div>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+  </div>
+
+     <div class="price">Price: $18</div>
+   <button class="addCart" onclick="addToCart('Two Tone Raw Cut Jeans', 18)">Add To Cart</button>
+  </div>
+	
+   <div class="row">
+   <div><img id="image8" src="images/pic22.jpg" alt=""/></div>
+   <button onclick="previous8()"><</button>
+   <button onclick="next8()">></button>
+   
+   <div class="rating">
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star-half'></i>
+   </div>
+   
+    <h3>Casual Short Crop</h3>
+   
+  <div class="color-picker" >
+     Color:
+     <div class="color-option" style="background-color: #FFCC99"></div>
+	 <div class="color-option" style="background-color: blue"></div>
+     <div class="color-option" style="background-color: pink"></div>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+  </div>
+  
+    <div class="price">Price: $11</div>
+   <button class="addCart" onclick="addToCart('Casual Short Crop', 11)">Add To Cart</button>
+  </div>
+  </div>
+	
+  <div class="products">
+  <div class="row">
+   <div><img id="image9" src="images/pic25.jpg" alt=""/>
+   </div>  <button onclick="previous9()"><</button>
+   <button onclick="next9()">></button>
+   
+  <div class="product-text">
+    <h5>New</h5>
+  </div>
+  
+  <div class="rating">
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+  </div>
+	
+    <h3>Flounce Sleeve Crop Top</h3>
+	
+  <div class="color-picker" >
+     Color:
+     <div class="color-option" style="background-color:pink"></div>
+     <div class="color-option" style="background-color:darkolivegreen"></div>
+     <div class="color-option" style="background-color:lightblue"></div>
+     <div class="color-option" style="background-color:black"></div>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+  </div>
+  
+   <div class="price">Price: $14</div>
+   <button class="addCart" onclick="addToCart('Flounce Sleeve Crop Top', 14)">Add To Cart</button>
+	</div>
+	
+	<div class="row">
+   <div><img id="image10" src="images/pic29.jpg" alt=""/>
+   </div>  <button onclick="previous10()"><</button>
+   <button onclick="next10()">></button>
+   
+  <div class="product-text">
+    <h5>Sale</h5>
+  </div>
+  
+  <div class="rating">
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star-half'></i>
+  </div>
+	
+    <h3>Dye Printed Top</h3>
+	
+  <div class="color-picker" >
+     Color:
+     <div class="color-option" style="background-color: #003366"></div>
+     <div class="color-option" style="background-color:#663333"></div>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+  </div>
+  
+   <div class="price">Price: $12 <span class="sale-price">Sale: $9.6</span></div>
+   <button class="addCart" onclick="addToCart('Dye Printed Top', 9.6)">Add To Cart</button>
+	</div>
+	
+   <div class="row">
+   <div><img id="image11" src="images/pic31.jpg" alt=""/></div>
+   <button onclick="previous11()"><</button>
+   <button onclick="next11()">></button>
+  
+   <div class="rating">
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+   </div>
+   
+    <h3>Plaid Pejama Set</h3>
+   
+  <div class="color-picker" >
+     Color:
+     <div class="color-option" style="background-color: black"></div>
+	 <div class="color-option" style="background-color: blue"></div>
+     <div class="color-option" style="background-color: #CC0000"></div>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+    <label><input class="size-option" type="radio" name="size" value="Xlarge" />XL</label>
+	
+  </div>
+  
+     <div class="price">Price: $13</div>
+   <button class="addCart" onclick="addToCart('Plaid Pejama Set',13)">Add To Cart</button>
+  </div>
+  
+   <div class="row">
+   <div><img id="image12" src="images/pic34.jpg" alt=""/></div>
+   <button onclick="previous12()"><</button>
+   <button onclick="next12()">></button>
+   
+   <div class="product-text">
+    <h5>Sale</h5>
+  </div>
+   
+   <div class="rating">
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star-half'></i>
+   </div>
+   
+    <h3>Satin Pejama Set</h3>
+   
+  <div class="color-picker" >
+     Color:
+     <div class="color-option" style="background-color: pink"></div>
+	 <div class="color-option" style="background-color: #FFCC99"></div>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+    <label><input class="size-option" type="radio" name="size" value="Xlarge" />XL</label>
+  </div>
+  
+   <div class="price">Price: $17.5<span class="sale-price">Sale: $14</span></div> 
+   <button class="addCart" onclick="addToCart('Satin Pejama Set',14)">Add To Cart</button>
+  </div>
+  </div>
+     
+    <br/>
+    <div id="cart" class="cart-hidden">
+        <div id="cart-items">
+            <h3>Shopping Cart</h3>
+            <ul id="selected-list"></ul>
+        </div>
+		<br/>
+        <div id="total-price">Total Price: $<span id="total">0</span></div>
+		<br/>
+        <button onclick="finalize()">Finish</button>
+    </div>
+  </section>
+  </body>
+  </html>
+  

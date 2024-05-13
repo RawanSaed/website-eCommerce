@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Man Products</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/image.css"/>
+   <link rel="stylesheet" href="css/home.css"/>
+  <script type="text/javascript" src="js/price.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  </head>
+  
+  <body>
+    <nav class="nav1">
+      <div class="nav">
+          <img src="images\logo.png" class="brand-logo" alt="logo pic"/>         
+          <ul class="links-container">
+              <li ><a href="index.html" >Home</a></li>
+              <li ><a href="womanprod.html" >Women</a></li>
+              <li ><a href="menprod.html" >Men</a></li>
+              <li ><a href="kidsprod.html" >Kids</a></li>
+          </ul>
+              <div class="search">
+                  <input type="text" class="search-box" placeholder="search product">
+                  <button class="search-btn">search</button>
+              <a href="SignUp.html"><img src="images\user.png" alt=""/></a>
+              <div class="cart-icon" onclick="toggleCart()">
+                <img src="images/cart.png" alt="Cart Icon">
+                        <span id="cart-total">0</span>
+              </div>
+               </div>
+          </div>
+      </nav>
+  <section class="trending-product" id="trending">
+    <div class="center-text">
+	<p>
+    <h2>Our Trending <span>Products</span></h2>
+    </div>
+	
+  <div class="products">
+  <div class="row">
+    <div><img id="product-image"  src="images\pic36.jpg" alt=""/></div>
+    
+  <div class="rating">
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+  </div>
+ 
+   <h3>Casual Tshirt</h3>
+	 
+  <div class="color-picker" >
+     Color:
+     <button  class="color-option" style="background-color: lightblue" data-image="images/pic36.jpg"></button>
+     <button class="color-option" style="background-color: white" data-image="images/pic37.jpg"></button>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+    <label><input class="size-option" type="radio" name="size" value="Xlarge" />XL</label>
+  </div>
+  
+  <div class="price">Price: $9</div>
+  <button class="addCart" onclick="addToCart('Casual Tshirt', 9)">Add To Cart</button>
+ </div>
+
+  <div class="row">
+    <div><img id="product-image1"  src="images/pic38.jpg" alt=""/>
+    
+    </div>
+  
+  <div class="product-text">
+    <h5>New</h5>
+  </div>
+  
+  <div class="rating">
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+  </div>
+	
+    <h3>Print Ombre Shirt</h3>
+	
+  <div class="color-picker" >
+     Color:
+      <button class="color-option1" style="background-color: white;" data-image="images/pic38.jpg"></button>
+      <button  class="color-option1" style="background-color: #990033;" data-image="images/pic39.jpg"></button>
+      <button   class="color-option1" style="background-color: gray;" data-image="images/pic40.jpg"></button>
+      </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+    <label><input class="size-option" type="radio" name="size" value="Xlarge" />XL</label>
+  </div>
+    
+  <div class="price">Price: $11</div>
+  <button class="addCart" onclick="addToCart('Print Ombre Shirtt', 11)">Add To Cart</button>
+ </div>
+   
+   <div class="row">
+   <div><img id="product-image2"   src="images\pic41.jpg" alt=""/></div>
+  
+   <div class="product-text">
+    <h5>Sale</h5>
+  </div>
+   <div class="rating">
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star-half'></i>
+	
+   </div>
+   
+    <h3>Sweatshirt</h3>
+   
+  <div class="color-picker" >
+     Color:
+     <botton class="color-option2" style="background-color: black" data-image="images/pic41.jpg"></botton>
+	 <button class="color-option2" style="background-color: #996633" data-image="images/pic42.jpg"></button>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+    <label><input class="size-option" type="radio" name="size" value="Xlarge" />XL</label>
+  </div>
+  
+  <div class="price">Price: $20 <span class="sale-price">Sale: $16</span></div>
+  <button class="addCart"  onclick="addToCart('Sweatshirt', 16)">Add To Cart</button>
+ </div>
+  
+  <div class="row">
+    <div><img id="product-image3"   src="images\pic45.jpg" alt=""/></div>
+  
+  <div class="rating">
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star-half'></i>
+  </div>
+ 
+   <h3>Manfinity Homme Men Plam Tree</h3>
+	 
+  <div class="color-picker" >
+     Color:
+     <button class="color-option3" style="background-color: white" data-image="images/pic45.jpg"></button>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+    <label><input class="size-option" type="radio" name="size" value="Xlarge" />XL</label>
+  </div>
+  
+  <div class="price">Price: $15</div>
+  <button class="addCart" onclick="addToCart('Manfinity Homme Men Plam Tree', 15)">Add To Cart</button>
+ </div>
+  </div>
+  	
+  <div class="products">
+  <div class="row">
+    <div><img id="product-image4"  src="images\pic46.jpg" alt=""/></div>
+   
+     <div class="product-text">
+    <h5>New</h5>
+  </div>
+  
+  <div class="rating">
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+  </div>
+ 
+   <h3>Manfinity Homme Pejama</h3>
+	 
+  <div class="color-picker" >
+     Color:
+     <botton class="color-option4" style="background-color: #996633" data-image="images/pic46.jpg"></botton>
+     <botton class="color-option4" style="background-color: gray" data-image="images/pic47.jpg"></botton>
+     <botton class="color-option4" style="background-color: #6699CC" data-image="images/pic48.jpg"></botton>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+  </div>
+  
+  <div class="price">Price: $23</div>
+  <button class="addCart" onclick="addToCart('Manfinity Homme Pejama', 23)">Add To Cart</button>
+ </div>
+  
+  <div class="row">
+    <div><img id="product-image5"  src="images\pic50.jpg" alt=""/></div>
+    
+  <div class="rating">
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+  </div>
+ 
+   <h3>Print Top and Gingham Pants</h3>
+	 
+  <div class="color-picker" >
+     Color:
+     <botton class="color-option5" style="background-color: white" data-image="images/pic50.jpg"></botton>
+     <botton class="color-option5" style="background-color: black" data-image="images/pic51.jpg"></botton>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="siYze" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+    <label><input class="size-option" type="radio" name="size" value="Xlarge" />XL</label>
+  </div>
+  
+  <div class="price">Price: $17</div>
+  <button class="addCart" onclick="addToCart('Print Top and Gingham Pants', 17)">Add To Cart</button>
+ </div>
+ 
+  
+   <div class="row">
+   <div><img id="product-image6"  src="images\pic52.jpg" alt=""/></div>
+   <div class="product-text">
+    <h5>Sale</h5>
+  </div>
+   <div class="rating">
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star-half'></i>
+	
+   </div>
+   
+    <h3>Casual Tapered Jeans with Slanted</h3>
+   
+  <div class="color-picker" >
+     Color:
+     <botton class="color-option6" style="background-color: lightblue" data-image="images/pic52.jpg"></botton>
+	 <div class="color-option6" style="background-color: #003366" data-image="images/pic53.jpg"></div>
+     <botton class="color-option6" style="background-color: lightgray" data-image="images/pic54.jpg"></botton>
+	 <botton class="color-option6" style="background-color: black" data-image="images/pic55.jpg"></botton>
+	 
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+    <label><input class="size-option" type="radio" name="size" value="Xlarge" />XL</label>
+  </div>
+  
+  <div class="price">Price: $25 <span class="sale-price">Sale: $20</span></p></div>
+  <button class="addCart" onclick="addToCart('Casual Tapered Jeans with Slanted', 20)">Add To Cart</button>
+ </div>
+  
+    <div class="row">
+   <div><img id="product-image7"  src="images\pic56.jpg" alt=""/></div>
+   
+   <div class="rating">
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	<i class='bx bxs-star'></i>
+	
+   </div>
+   
+    <h3>Loose Fit Wide Leg Jeans</h3>
+   
+
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+    <label><input class="size-option" type="radio" name="size" value="Xlarge" />XL</label>
+  </div>
+  
+	  <div class="price">Price: $27</div>
+    <button class="addCart" onclick="addToCart('Loose Fit Wide Leg Jeans', 27)">Add To Cart</button>
+   </div>
+   </div> 
+   
+   <div class="products">
+  <div class="row">
+        <div><img id="product-image8"  src="images/pic57.jpg" alt=""/>
+        </div>
+  
+  
+  <div class="rating">
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+  </div>
+   <h3>Wide Leg Jeans with Patch Pockets</h3>
+	 
+  <div class="color-picker" >
+     Color:
+     <botton class="color-option8" style="background-color: #6699CC" data-image="images/pic57.jpg"></botton>
+     <botton class="color-option8" style="background-color: black" data-image="images/pic58.jpg"></botton>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+    <label><input class="size-option" type="radio" name="size" value="Xlarge" />XL</label>
+  </div>
+  
+  <div class="price">Price: $23</div>
+  <button class="addCart" onclick="addToCart('Wide Leg Jeans with Patch Pockets', 23)">Add To Cart</button>
+ </div>
+  
+   <div class="row">
+    <div><img id="product-image9" src="images/pic59.jpg" alt=""/></div>
+    
+     <div class="product-text">
+    <h5>New</h5>
+  </div>
+  
+  <div class="rating">
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+	 <i class='bx bxs-star'></i>
+  </div>
+ 
+   <h3>Drawstring Waist Cargo Denim Pants</h3>
+	 
+  <div class="color-picker" >
+     Color:
+     <botton class="color-option9" style="background-color: gray" data-image="images/pic59.jpg"></botton>
+     <botton class="color-option9" style="background-color: black" data-image="images/pic60.jpg"></botton>
+  </div>
+  
+  <div class="size-select">
+	Size:
+    <label><input class="size-option" type="radio" name="size" value="small" />S</label>
+    <label><input class="size-option" type="radio" name="size" value="medium" />M</label>
+    <label><input class="size-option" type="radio" name="size" value="large" />L</label>
+    <label><input class="size-option" type="radio" name="size" value="Xlarge" />XL</label>
+  </div>
+  
+  <div class="price">Price: $25</div>
+  <button class="addCart" onclick="addToCart('Drawstring Waist Cargo Denim Pants', 25)">Add To Cart</button>
+ </div>
+  </div>
+ 
+ </div>  
+ </p> 
+</div>
+<div id="cart" class="cart-hidden">
+  <div id="cart-items">
+      <h3>Shopping Cart</h3>
+      <ul id="selected-list"></ul>
+  </div>
+<br/>
+  <div id="total-price">Total Price: $<span id="total">0</span></div>
+<br/>
+  <button onclick="finalize()">Finish</button>
+  
+</section>
+<script>
+
+  const productImage = document.getElementById("product-image");
+const colorButtons = document.querySelectorAll(".color-option");
+
+colorButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    productImage.src = button.dataset.image;
+  });
+});
+const productImage1 = document.getElementById("product-image1");
+const colorButtons1 = document.querySelectorAll(".color-option1");
+
+colorButtons1.forEach((button) => {
+  button.addEventListener("click", () => {
+    productImage1.src = button.dataset.image;
+  });
+});
+const productImage2 = document.getElementById("product-image2");
+const colorButtons2 = document.querySelectorAll(".color-option2");
+
+colorButtons2.forEach((button) => {
+  button.addEventListener("click", () => {
+    productImage2.src = button.dataset.image;
+  });
+});
+const productImage3 = document.getElementById("product-image3");
+const colorButtons3 = document.querySelectorAll(".color-option3");
+
+colorButtons3.forEach((button) => {
+  button.addEventListener("click", () => {
+    productImage3.src = button.dataset.image;
+  });
+});
+const productImage4 = document.getElementById("product-image4");
+const colorButtons4 = document.querySelectorAll(".color-option4");
+
+colorButtons4.forEach((button) => {
+  button.addEventListener("click", () => {
+    productImage4.src = button.dataset.image;
+  });
+});
+const productImage5 = document.getElementById("product-image5");
+const colorButtons5 = document.querySelectorAll(".color-option5");
+
+colorButtons5.forEach((button) => {
+  button.addEventListener("click", () => {
+    productImage5.src = button.dataset.image;
+  });
+});
+const productImage6 = document.getElementById("product-image6");
+const colorButtons6 = document.querySelectorAll(".color-option6");
+
+colorButtons6.forEach((button) => {
+  button.addEventListener("click", () => {
+    productImage6.src = button.dataset.image;
+  });
+});
+const productImage7 = document.getElementById("product-image7");
+const colorButtons7 = document.querySelectorAll(".color-option7");
+
+colorButtons7.forEach((button) => {
+  button.addEventListener("click", () => {
+    productImage7.src = button.dataset.image;
+  });
+});
+const productImage8 = document.getElementById("product-image8");
+const colorButtons8 = document.querySelectorAll(".color-option8");
+
+colorButtons8.forEach((button) => {
+  button.addEventListener("click", () => {
+    productImage8.src = button.dataset.image;
+  });
+});
+const productImage9 = document.getElementById("product-image9");
+const colorButtons9 = document.querySelectorAll(".color-option9");
+
+colorButtons9.forEach((button) => {
+  button.addEventListener("click", () => {
+    productImage9.src = button.dataset.image;
+  });
+});
+
+</script>
+  </body>
+  </html>
+	
